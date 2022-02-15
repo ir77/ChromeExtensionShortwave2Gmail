@@ -1,0 +1,24 @@
+{
+  "name": "Sample",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Sample Chrome Extension",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://calendar.google.com/calendar/u/0/r/day"
+      ],
+      "js": [
+        "content.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://calendar.google.com/calendar/u/0/r/day"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ]
+}
